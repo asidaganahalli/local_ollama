@@ -147,33 +147,33 @@ Model: Llama 3.2 1B Instruct (4-bit quantized, ~600MB download)
     ollama run llama3.2:1b "Explain what recursion is in 2 sentences."
 
 # 9. Start/stop Ollama service
-  # Start service on boot / login
-  brew services start ollama
-  
-  # Stop service (frees RAM)
-  brew services stop ollama
-  
-  # Restart (after config changes)
-  brew services restart ollama
-  
-  # Check status
-  brew services list | grep ollama
+      # To Start service on boot / login
+      brew services start ollama
+      
+      #To Stop service (frees RAM)
+      brew services stop ollama
+      
+      # Restart (after config changes)
+      brew services restart ollama
+      
+      # Check status
+      brew services list | grep ollama
 
 # 10. Monitoring RAM usage
-  Open Activity Monitor → Memory:
-  Look for the ollama process.
-  While chatting with llama3.2:1b using the above settings, expect:
-  Roughly ~2–2.5 GB RAM usage for ollama at peak
-  macOS memory pressure indicator should stay green
-  If memory pressure goes yellow or red, you can further reduce:
-  OLLAMA_CONTEXT_LENGTH from 512 → 256
-  OLLAMA_BATCH from 8 → 4
-  Update the local.ollama.env.plist, reload it, and restart the service.
+      Open Activity Monitor → Memory:
+      Look for the ollama process.
+      While chatting with llama3.2:1b using the above settings, expect:
+      Roughly ~2–2.5 GB RAM usage for ollama at peak
+      macOS memory pressure indicator should stay green
+      If memory pressure goes yellow or red, you can further reduce:
+      OLLAMA_CONTEXT_LENGTH from 512 → 256
+      OLLAMA_BATCH from 8 → 4
+      Update the local.ollama.env.plist, reload it, and restart the service.
 
 # 11. End result
-  You now have:
-    Ollama installed via Homebrew
-    A 4‑bit quantized Llama 3.2 1B model running fully offline
-    Aggressive RAM control tuned for an 8GB Intel MacBook Air
-    Clean start/stop service commands
-    A reusable local.ollama.env.plist that survives Homebrew upgrades
+You now have:
+Ollama installed via Homebrew
+A 4‑bit quantized Llama 3.2 1B model running fully offline
+Aggressive RAM control tuned for an 8GB Intel MacBook Air
+Clean start/stop service commands
+A reusable local.ollama.env.plist that survives Homebrew upgrades
