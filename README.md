@@ -107,35 +107,35 @@ Model: Llama 3.2 1B Instruct (4-bit quantized, ~600MB download)
     OLLAMA_NUM_PARALLEL → 1
 
 # 7. What each parameter does
-OLLAMA_FLASH_ATTENTION=1
-Enables flash attention for performance and memory efficiency.
-
-OLLAMA_KV_CACHE_TYPE=q4_0
-4‑bit quantized key/value cache; minimizes RAM usage at slight quality cost for very long contexts.
-
-OLLAMA_NUM_THREAD=4
-Limits CPU threads used by the model; reduces CPU contention and heat.
-
-OLLAMA_CONTEXT_LENGTH=512
-Maximum tokens of context; 512 is conservative and reduces memory versus 4k+ defaults.
-
-OLLAMA_BATCH=8
-Fewer tokens processed at once, lowering peak memory usage.
-
-OLLAMA_GPU_LAYERS=0
-Forces CPU‑only inference (good on Intel Macs with no useful GPU).
-
-OLLAMA_MAX_LOADED_MODELS=1
-Only one model can be in memory at a time.
-
-OLLAMA_KEEP_ALIVE=60
-Unloads idle models after 60 seconds to free RAM.
-
-OLLAMA_MMAP=1
-Uses memory‑mapped files for model weights; reduces RAM at the cost of some disk I/O.
-
-OLLAMA_NUM_PARALLEL=1
-Only one request processed at a time; avoids spikes in memory and CPU.
+    OLLAMA_FLASH_ATTENTION=1
+    Enables flash attention for performance and memory efficiency.
+    
+    OLLAMA_KV_CACHE_TYPE=q4_0
+    4‑bit quantized key/value cache; minimizes RAM usage at slight quality cost for very long contexts.
+    
+    OLLAMA_NUM_THREAD=4
+    Limits CPU threads used by the model; reduces CPU contention and heat.
+    
+    OLLAMA_CONTEXT_LENGTH=512
+    Maximum tokens of context; 512 is conservative and reduces memory versus 4k+ defaults.
+    
+    OLLAMA_BATCH=8
+    Fewer tokens processed at once, lowering peak memory usage.
+    
+    OLLAMA_GPU_LAYERS=0
+    Forces CPU‑only inference (good on Intel Macs with no useful GPU).
+    
+    OLLAMA_MAX_LOADED_MODELS=1
+    Only one model can be in memory at a time.
+    
+    OLLAMA_KEEP_ALIVE=60
+    Unloads idle models after 60 seconds to free RAM.
+    
+    OLLAMA_MMAP=1
+    Uses memory‑mapped files for model weights; reduces RAM at the cost of some disk I/O.
+    
+    OLLAMA_NUM_PARALLEL=1
+    Only one request processed at a time; avoids spikes in memory and CPU.
 
 
 # 8. Pull and run Llama 3.2 1B (offline)
