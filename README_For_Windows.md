@@ -64,17 +64,17 @@
         OLLAMA_NUM_PARALLEL	1
 
 ## 3. What Each Parameter Does
-Variable	                    Purpose
-OLLAMA_FLASH_ATTENTION=1	  Enables flash attention for memory‑efficient performance.
-OLLAMA_KV_CACHE_TYPE=q4_0	  4‑bit quantized cache; lower RAM use with small quality trade‑off.
-OLLAMA_NUM_THREAD=4	        Caps CPU threads for smoother multitasking.
-OLLAMA_CONTEXT_LENGTH=512	  Reduces maximum tokens to control memory footprint.
-OLLAMA_BATCH=8	            Smaller batches keep memory steady under 3 GB.
-OLLAMA_GPU_LAYERS=0	        CPU‑only inference (safer for Intel integrated graphics).
-OLLAMA_MAX_LOADED_MODELS=1	Keeps only one model resident in memory.
-OLLAMA_KEEP_ALIVE=60	      Frees RAM after 60 seconds idle.
-OLLAMA_MMAP=1	              Loads model weights via memory‑mapped files for RAM savings.
-OLLAMA_NUM_PARALLEL=1	      Handles one request at a time; avoids CPU spikes.
+    Variable	                    Purpose
+    OLLAMA_FLASH_ATTENTION=1	  Enables flash attention for memory‑efficient performance.
+    OLLAMA_KV_CACHE_TYPE=q4_0	  4‑bit quantized cache; lower RAM use with small quality trade‑off.
+    OLLAMA_NUM_THREAD=4	        Caps CPU threads for smoother multitasking.
+    OLLAMA_CONTEXT_LENGTH=512	  Reduces maximum tokens to control memory footprint.
+    OLLAMA_BATCH=8	            Smaller batches keep memory steady under 3 GB.
+    OLLAMA_GPU_LAYERS=0	        CPU‑only inference (safer for Intel integrated graphics).
+    OLLAMA_MAX_LOADED_MODELS=1	Keeps only one model resident in memory.
+    OLLAMA_KEEP_ALIVE=60	      Frees RAM after 60 seconds idle.
+    OLLAMA_MMAP=1	              Loads model weights via memory‑mapped files for RAM savings.
+    OLLAMA_NUM_PARALLEL=1	      Handles one request at a time; avoids CPU spikes.
 
 ## 4. Pull and Run Llama 3.2 1B
 Download the model:
