@@ -23,14 +23,14 @@
     
     To confirm:
       Open powershell & Run:
-      Get-Service Ollama
+      Get-Service ollama
 
     To manually control:
 
     Open powershell & Run:
-      Start-Service Ollama
-      Stop-Service Ollama
-      Restart-Service Ollama
+      Start-Service ollama
+      Stop-Service ollama
+      Restart-Service ollama
 
 ## 2. Configure Environment Variables for Memory Optimization
     Windows uses persistent system or user environment variables (instead of plist files on macOS). You can set them permanently via PowerShell.
@@ -49,7 +49,7 @@
     Then, restart your computer or restart the service:
 
     Open powershell & Run:
-      Restart-Service Ollama
+      Restart-Service ollama
 
     To confirm they are loaded:
     Open powershell & Run:
@@ -89,20 +89,20 @@
     Using PowerShell (Admin):
 
       # Start service (runs on boot)
-        Start-Service Ollama
+        Start-Service ollama
       
       # Stop to free memory
-        Stop-Service Ollama
+        Stop-Service ollama
       
       # Restart after config changes
-        Restart-Service Ollama
+        Restart-Service ollama
       
       # View status
-        Get-Service Ollama
+        Get-Service ollama
 
     To make Ollama auto‑start on boot if it doesn’t already:
     Open powershell & Run:
-      Set-Service -Name "Ollama" -StartupType Automatic
+      Set-Service -Name "ollama" -StartupType Automatic
 
 #  6. Monitor Memory Usage
     Open Task Manager → Details tab → ollama.exe.
