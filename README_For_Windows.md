@@ -81,9 +81,9 @@
     Open powershell & Run:
         ollama pull llama3.2:1b
 
-Test it:
-    Open powershell & Run:
-      ollama run llama3.2:1b "Explain recursion in two sentences."
+    Test it:
+        Open powershell & Run:
+          ollama run llama3.2:1b "Explain recursion in two sentences."
 
 ## 5. Manage Ollama Service on Windows
     Using PowerShell (Admin):
