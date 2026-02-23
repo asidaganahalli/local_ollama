@@ -33,9 +33,7 @@
       Restart-Service Ollama
 
 ## 2. Configure Environment Variables for Memory Optimization
-    Windows uses persistent system or user environment variables (instead of plist files on macOS). 
-    You can set them permanently via PowerShell.
-    
+    Windows uses persistent system or user environment variables (instead of plist files on macOS). You can set them permanently via PowerShell.
     Run PowerShell as Administrator and execute:
         setx OLLAMA_FLASH_ATTENTION "1"
         setx OLLAMA_KV_CACHE_TYPE "q4_0"
