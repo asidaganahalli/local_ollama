@@ -77,32 +77,32 @@
     OLLAMA_NUM_PARALLEL=1	      Handles one request at a time; avoids CPU spikes.
 
 ## 4. Pull and Run Llama 3.2 1B
-Download the model:
+    Download the model:
     Open powershell & Run:
-      ollama pull llama3.2:1b
+        ollama pull llama3.2:1b
 
 Test it:
     Open powershell & Run:
       ollama run llama3.2:1b "Explain recursion in two sentences."
 
 ## 5. Manage Ollama Service on Windows
-Usmg PowerShell (Admin):
+    Using PowerShell (Admin):
 
-  # Start service (runs on boot)
-    Start-Service Ollama
-  
-  # Stop to free memory
-    Stop-Service Ollama
-  
-  # Restart after config changes
-    Restart-Service Ollama
-  
-  # View status
-    Get-Service Ollama
+      # Start service (runs on boot)
+        Start-Service Ollama
+      
+      # Stop to free memory
+        Stop-Service Ollama
+      
+      # Restart after config changes
+        Restart-Service Ollama
+      
+      # View status
+        Get-Service Ollama
 
-To make Ollama auto‑start on boot if it doesn’t already:
-Open powershell & Run:
-  Set-Service -Name "Ollama" -StartupType Automatic
+    To make Ollama auto‑start on boot if it doesn’t already:
+    Open powershell & Run:
+      Set-Service -Name "Ollama" -StartupType Automatic
 
 #  6. Monitor Memory Usage
 Open Task Manager → Details tab → ollama.exe.
