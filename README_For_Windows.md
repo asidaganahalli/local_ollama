@@ -43,6 +43,7 @@
 
     Open powershell & Run:
       Get-Process | Where-Object { $_.ProcessName -like "*ollama*" } | Stop-Process -Force
+      ollama serve
 
     To confirm they are loaded:
     Open powershell & Run:
