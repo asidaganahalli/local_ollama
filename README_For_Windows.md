@@ -35,19 +35,18 @@
 ## 2. Configure Environment Variables for Memory Optimization
 Windows uses persistent system or user environment variables (instead of plist files on macOS). 
 You can set them permanently via PowerShell.
-Run PowerShell as Administrator and execute:
 
-Open powershell & Run:
-  setx OLLAMA_FLASH_ATTENTION "1"
-  setx OLLAMA_KV_CACHE_TYPE "q4_0"
-  setx OLLAMA_NUM_THREAD "4"
-  setx OLLAMA_CONTEXT_LENGTH "512"
-  setx OLLAMA_BATCH "8"
-  setx OLLAMA_GPU_LAYERS "0"
-  setx OLLAMA_MAX_LOADED_MODELS "1"
-  setx OLLAMA_KEEP_ALIVE "60"
-  setx OLLAMA_MMAP "1"
-  setx OLLAMA_NUM_PARALLEL "1"
+Run PowerShell as Administrator and execute:
+    setx OLLAMA_FLASH_ATTENTION "1"
+    setx OLLAMA_KV_CACHE_TYPE "q4_0"
+    setx OLLAMA_NUM_THREAD "4"
+    setx OLLAMA_CONTEXT_LENGTH "512"
+    setx OLLAMA_BATCH "8"
+    setx OLLAMA_GPU_LAYERS "0"
+    setx OLLAMA_MAX_LOADED_MODELS "1"
+    setx OLLAMA_KEEP_ALIVE "60"
+    setx OLLAMA_MMAP "1"
+    setx OLLAMA_NUM_PARALLEL "1"
 
 Then, restart your computer or restart the service:
 
