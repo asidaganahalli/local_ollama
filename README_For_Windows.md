@@ -38,7 +38,6 @@ You can set them permanently via PowerShell.
 Run PowerShell as Administrator and execute:
 
 Open powershell & Run:
-  # CPU and memory optimizations for 8GB systems
   setx OLLAMA_FLASH_ATTENTION "1"
   setx OLLAMA_KV_CACHE_TYPE "q4_0"
   setx OLLAMA_NUM_THREAD "4"
