@@ -105,20 +105,20 @@
       Set-Service -Name "Ollama" -StartupType Automatic
 
 #  6. Monitor Memory Usage
-Open Task Manager → Details tab → ollama.exe.
-While chatting with llama3.2:1b, expect:
-    2 – 2.5 GB RAM usage peak
-    CPU stable under 60–70%
-
-If your system slows down:
-    Lower OLLAMA_CONTEXT_LENGTH → 256
-    Lower OLLAMA_BATCH → 4
-    Then rerun the setx commands and restart the service.
+    Open Task Manager → Details tab → ollama.exe.
+    While chatting with llama3.2:1b, expect:
+        2 – 2.5 GB RAM usage peak
+        CPU stable under 60–70%
+    
+    If your system slows down:
+        Lower OLLAMA_CONTEXT_LENGTH → 256
+        Lower OLLAMA_BATCH → 4
+        Then rerun the setx commands and restart the service.
 
 ## 7. End Result
-You now have:
-    Ollama running as a Windows service
-    A 4‑bit Llama 3.2 1B model fully offline
-    Optimized environment variables for 8 GB setups
-    Consistent performance under 3 GB RAM
-    Easy start/stop/restart controls with PowerShell
+    You now have:
+        Ollama running as a Windows service
+        A 4‑bit Llama 3.2 1B model fully offline
+        Optimized environment variables for 8 GB setups
+        Consistent performance under 3 GB RAM
+        Easy start/stop/restart controls with PowerShell
