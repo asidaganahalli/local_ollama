@@ -1,11 +1,11 @@
 ## local_ollama (Windows 10 Pro)
-A complete guide to set up a lightweight, local AI assistant on Windows 10 Pro using Ollama and Llama 3.2 1B (4‑bit quantized) with optimized system parameters for 8 GB RAM PCs.
+    A complete guide to set up a lightweight, local AI assistant on Windows 10 Pro using Ollama and Llama 3.2 1B (4‑bit quantized) with optimized system parameters for 8 GB RAM PCs.
 
 ## Prerequisites
-Hardware: Windows 10 Pro, Intel CPU, Atleast 8 GB RAM
-Pre‑installed: PowerShell 7+, Administrator access
-Goal: Keep Ollama + model under 3 GB RAM
-Model: Llama 3.2 1B Instruct (4‑bit quantized, ~600 MB download)
+    Hardware: Windows 10 Pro, Intel CPU, Atleast 8 GB RAM
+    Pre‑installed: PowerShell 7+, Administrator access
+    Goal: Keep Ollama + model under 3 GB RAM
+    Model: Llama 3.2 1B Instruct (4‑bit quantized, ~600 MB download)
 
 ## 1. Install Ollama on Windows
     Navigate to https://ollama.com/download.
